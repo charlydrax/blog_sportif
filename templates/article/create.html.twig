@@ -1,0 +1,27 @@
+{% extends 'layouts/layout-full-width.html.twig' %}
+
+{% block title %}Article|Publication{% endblock %}
+
+{% block actionBar %}
+<div class="container mb-4">
+
+  </div> 
+{% endblock %}
+
+{% block contentFullWidth %}
+<div class="create">
+    <div class="wrapper-create">
+            <h1>Rédigez votre article</h1>
+        {{ form_start(print_article, {'attr': {'novalidate': ''}}) }}
+
+            {{ form_errors(print_article) }}
+            {{ form_row(print_article.name) }}
+            {{ form_row(print_article.description) }}
+
+        {{ form_end(print_article) }}
+
+    {# {{ form_end(form) }} #}
+    {# {{ form_end(print_article) }} #}
+    </div>
+</div>
+{% endblock %}

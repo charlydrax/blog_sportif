@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog Sportif{% endblock %}
+
+{% block body %}
+
+
+<div class="home">
+
+    <div class="title">
+        <h1> Bienvenue sur le <span>Blog    Sportif</span> 💪</h1>
+
+        <h5>Que vous soyez passionné de football, gymnastique ou n'importe quel autre sport <br> vous êtes au bon endroit pour trouver inspirations et conseils.</h5> 
+    </div>
+    <div class="subtitle">
+        <p>Rejoignez notre communauté dès aujourd'hui en vous inscrivant gratuitement ! </p> 
+        
+        <div class="btn-go">
+            <div class="btn-article">
+                <a href="{{ path('app_article') }}">Accéder aux articles</a>
+            </div>  
+            <div class="btn-create">
+                <a href="{{ path('app_article_create') }}"> Rédiger vos  articles</a>
+            </div>  
+        </div>
+            
+    <div class="endtitles">
+        <h6>Ensemble, partageons nos expériences et notre passion pour le sport !</h6> 
+        <h6>Inscrivez-vous maintenant et découvrez tout ce que notre blog a à offrir ! </h6>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
